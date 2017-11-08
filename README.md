@@ -41,6 +41,18 @@ $wareki:=ERA_Convert_from_date (!2019-04-01!;->$era;->$year;->$month;->$day)  //
 ```
 
 ```
+  //和暦から西暦に変換する
+C_DATE($seireki)
+$seireki:=ERA_Convert_to_date (3;64;1;7)  //89/01/07
+$seireki:=ERA_Convert_to_date (4;31;3;31)  //19/03/31
+$seireki:=ERA_Convert_to_date (5;1;4;1)  //19/04/01
+$seireki:=ERA_Convert_to_date (1;45;7;30)  //1912/07/29
+$seireki:=ERA_Convert_to_date (2;1;7;30)  //1912/07/30
+```
+
+* ポップアップメニュー・セットアップ用
+
+```
   //平成（元号#4）の年リストを取得する（1~31）
 ARRAY TEXT($years;0)
 ERA_GET_YEAR_LIST (->$years;4)
@@ -54,12 +66,11 @@ ARRAY TEXT($days;0)
 ERA_GET_DAY_LIST (->$days;1;1;4)
 ```
 
+* ポップアップメニュー・項目選択処理用
+
 ```
-  //和暦から西暦に変換する
-C_DATE($seireki)
-$seireki:=ERA_Convert_to_date (3;64;1;7)  //89/01/07
-$seireki:=ERA_Convert_to_date (4;31;3;31)  //19/03/31
-$seireki:=ERA_Convert_to_date (5;1;4;1)  //19/04/01
-$seireki:=ERA_Convert_to_date (1;45;7;30)  //1912/07/29
-$seireki:=ERA_Convert_to_date (2;1;7;30)  //1912/07/30
+  //新元号（元号#5）1年1番目の月
+$month_index:=ERA_Get_month_index (5;1;1)  //4
+  //平成（元号#4）1年1月1番目の日
+$day_index:=ERA_Get_day_index (4;1;1;1)  //8
 ```
