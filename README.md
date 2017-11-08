@@ -39,3 +39,17 @@ $wareki:=ERA_Convert_from_date (!2017-01-01!;->$era;->$year;->$month;->$day)  //
 $wareki:=ERA_Convert_from_date (!2019-03-31!;->$era;->$year;->$month;->$day)  //平成31年3月31日
 $wareki:=ERA_Convert_from_date (!2019-04-01!;->$era;->$year;->$month;->$day)  //新元号元年4月1日
 ```
+
+```
+  //平成（元号#4）の年リストを取得する（1~31）
+ARRAY TEXT($years;0)
+ERA_GET_YEAR_LIST (->$years;4)
+
+  //平成（元号#4）31年の月リストを取得する（1~3）
+ARRAY TEXT($months;0)
+ERA_GET_MONTH_LIST (->$months;31;4)
+
+  //平成（元号#4）1年の1月の日リストを取得する（8~31）
+ARRAY TEXT($days;0)
+ERA_GET_DAY_LIST (->$days;1;1;4)
+```
