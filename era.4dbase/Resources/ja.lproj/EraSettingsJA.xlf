@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+	<file datatype="x-STR#" original="undefined" product-version="v11" source-language="en-US" target-language="ja">
+	  <header />
+
+	  <body>
+		<group resname="EraSettingsMain" id="1867">
+			<trans-unit id="0" resname="EraList">
+			   <source></source>
+               <target>明治;大正;昭和;平成;新元号</target>
+			</trans-unit>
+			<!--The value to add if maxYear = 0-->
+			<trans-unit id="1" resname="OffsetForCurrentEra">
+			   <source></source>
+			   <target>1</target>
+			</trans-unit>			
+		</group>
+		<group resname="EraSettingsDetail" id="1868">			
+			<!--MaxYear;OffsetToGregorian;FirstMonth;FirstDay;LastMonth;LastDay(inclusive)-->
+			<trans-unit id="1" resname="EraSettings1">
+			   <source></source>
+			<!--Meiji and Taisho have redundant start and end days-->				   
+			   <target>45;1867;1;1;7;30</target>
+			</trans-unit>
+			<trans-unit id="2" resname="EraSettings2">
+			   <source></source>
+			   <target>15;1911;7;30;12;25</target>
+			</trans-unit>
+			<trans-unit id="3" resname="EraSettings3">
+			   <source></source>
+			   <target>64;1925;12;25;1;7</target>
+			</trans-unit>
+			<trans-unit id="4" resname="EraSettings4">
+			   <source></source>
+			   <target>31;1988;1;8;3;31</target>
+			</trans-unit>
+            <trans-unit id="5" resname="EraSettings5">
+                <source></source>
+                <target>0;2018;4;1;12;31</target>
+            </trans-unit>
+		</group>
+		<!--Months that have 29 days-->
+		<group resname="EraSettingsMeiji" id="1869">
+			<trans-unit id="1" resname="EraMeiji1">
+			   <source></source>
+			   <target>1;4;5;7;8;10;13</target>
+			</trans-unit>
+			<trans-unit id="2" resname="EraMeiji2">
+			   <source></source>
+			   <target>4;5;7;8;10</target>
+			</trans-unit>
+			<trans-unit id="3" resname="EraMeiji3">
+			   <source></source>
+			   <target>1;4;6;8;10;11;13</target>
+			</trans-unit>
+			<trans-unit id="4" resname="EraMeiji4">
+			   <source></source>
+			   <target>3;6;8;10;11</target>
+			</trans-unit>			
+			<trans-unit id="5" resname="EraMeiji5">
+			   <source></source>
+			   <target>1;3;6;9;11</target>
+			</trans-unit>
+			<trans-unit id="11" resname="EraMeijiMonth1">
+			   <source></source>
+			   <target>1;2;3;4;閏4;5;6;7;8;9;10;11;12</target>
+			</trans-unit>
+			<trans-unit id="12" resname="EraMeijiMonth2">
+			   <source></source>
+			   <target>1;2;3;4;5;6;7;8;9;10;11;12</target>
+			</trans-unit>
+			<trans-unit id="13" resname="EraMeijiMonth3">
+			   <source></source>
+			   <target>1;2;3;4;5;6;7;8;9;10;閏10;11;12</target>
+			</trans-unit>
+			<trans-unit id="14" resname="EraMeijiMonth4">
+			   <source></source>
+			   <target>1;2;3;4;5;6;7;8;9;10;11;12</target>
+			</trans-unit>			
+			<trans-unit id="15" resname="EraMeijiMonth5">
+			   <source></source>
+			   <target>1;2;3;4;5;6;7;8;9;10;11;12</target>
+			</trans-unit>										
+		</group>		
+		<!--Years that have 13 months-->		
+		<group resname="EraSettingsMeijiLeapMonth" id="1870">			
+			<trans-unit id="1" resname="EraMeijiLeapMonth1">
+			   <source></source>			   
+			   <target>4</target>
+			</trans-unit>
+			<trans-unit id="2" resname="EraMeijiLeapMonth3">
+			   <source></source>			   
+			   <target>10</target>
+			</trans-unit>
+		</group>
+		<group resname="EraSettingsMeijiStart" id="1871">			
+			<trans-unit id="1" resname="EraMeijiStart1">
+			   <source></source>
+			   <target>1868;1;25</target>
+			</trans-unit>
+			<trans-unit id="2" resname="EraMeijiStart2">
+			   <source></source>
+			   <target>1869;2;11</target>
+			</trans-unit>
+			<trans-unit id="3" resname="EraMeijiStart3">
+			   <source></source>
+			   <target>1870;2;1</target>
+			</trans-unit>
+			<trans-unit id="4" resname="EraMeijiStart4">
+			   <source></source>
+			   <target>1871;2;19</target>
+			</trans-unit>	
+			<trans-unit id="5" resname="EraMeijiStart5">
+			   <source></source>
+			   <target>1872;2;9</target>
+			</trans-unit>														
+		</group>
+		<group resname="EraSettingsLocalizedString" id="1872">			
+			<trans-unit id="1" resname="Year">
+			   <source></source>
+			   <target>年</target>
+			</trans-unit>
+			<trans-unit id="2" resname="Month">
+			   <source></source>
+			   <target>月</target>
+			</trans-unit>
+			<trans-unit id="3" resname="Day">
+			   <source></source>
+			   <target>日</target>
+			</trans-unit>	
+			<trans-unit id="4" resname="One">
+			   <source></source>
+			   <target>元</target>
+			</trans-unit>												
+		</group>				
+	  </body>
+   </file>
+</xliff>
