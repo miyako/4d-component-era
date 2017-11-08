@@ -60,4 +60,6 @@ C_DATE($seireki)
 $seireki:=ERA_Convert_to_date (3;64;1;7)  //89/01/07
 $seireki:=ERA_Convert_to_date (4;31;3;31)  //19/03/31
 $seireki:=ERA_Convert_to_date (5;1;4;1)  //19/04/01
+$seireki:=ERA_Convert_to_date (1;45;7;30)  //1912/07/29
+$seireki:=ERA_Convert_to_date (2;1;7;30)  //1912/07/30
 ```
