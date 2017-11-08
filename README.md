@@ -53,3 +53,11 @@ ERA_GET_MONTH_LIST (->$months;31;4)
 ARRAY TEXT($days;0)
 ERA_GET_DAY_LIST (->$days;1;1;4)
 ```
+
+```
+  //和暦から西暦に変換する
+C_DATE($seireki)
+$seireki:=ERA_Convert_to_date (3;64;1;7)  //89/01/07
+$seireki:=ERA_Convert_to_date (4;31;3;31)  //19/03/31
+$seireki:=ERA_Convert_to_date (5;1;4;1)  //19/04/01
+```
