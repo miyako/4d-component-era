@@ -12,7 +12,7 @@
 			<!--The value to add if maxYear = 0-->
 			<trans-unit id="1" resname="OffsetForCurrentEra">
 			   <source></source>
-			   <target>1</target>
+			   <target>0</target>
 			</trans-unit>			
 		</group>
 		<group resname="EraSettingsDetail" id="1868">			
