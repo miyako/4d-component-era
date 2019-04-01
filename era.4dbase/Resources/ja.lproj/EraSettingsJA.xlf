@@ -7,7 +7,7 @@
 		<group resname="EraSettingsMain" id="1867">
 			<trans-unit id="0" resname="EraList">
 			   <source></source>
-               <target>明治;大正;昭和;平成;新元号</target>
+               <target>明治;大正;昭和;平成;令和</target>
 			</trans-unit>
 			<!--The value to add if maxYear = 0-->
 			<trans-unit id="1" resname="OffsetForCurrentEra">
