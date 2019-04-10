@@ -12,6 +12,8 @@
 日付の設定は外部``XML``ファイルで管理しており，カスタマイズすることができます。
 標準XLIFFファイルなので，MEIJI, HEISEIなど，ローカライズもOKです。
 
+**TODO**: スレッドセーフ（``Storage``）
+
 * フォーマット
 
 ``EraList``:``明治;大正;昭和;平成;新元号``
@@ -31,13 +33,16 @@
 ``1``年は「元年」と変換されます。
 
 ```
-//西暦から和暦に変換する
+  //西暦から和暦に変換する
+C_TEXT($wareki)
 C_LONGINT($era;$year;$month;$day)
 $wareki:=ERA_Convert_from_date (!1989-01-01!;->$era;->$year;->$month;->$day)  //昭和64年1月1日
 $wareki:=ERA_Convert_from_date (!1989-01-08!;->$era;->$year;->$month;->$day)  //平成元年1月8日
 $wareki:=ERA_Convert_from_date (!2017-01-01!;->$era;->$year;->$month;->$day)  //平成29年1月1日
 $wareki:=ERA_Convert_from_date (!2019-03-31!;->$era;->$year;->$month;->$day)  //平成31年3月31日
-$wareki:=ERA_Convert_from_date (!2019-04-01!;->$era;->$year;->$month;->$day)  //新元号元年4月1日
+$wareki:=ERA_Convert_from_date (!2019-04-01!;->$era;->$year;->$month;->$day)  //平成31年4月1日
+$wareki:=ERA_Convert_from_date (!2019-05-01!;->$era;->$year;->$month;->$day)  //令和元年5月1日
+$wareki:=ERA_Convert_from_date (!2020-01-01!;->$era;->$year;->$month;->$day)  //令和2年1月1日
 ```
 
 ```
