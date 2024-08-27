@@ -1,6 +1,8 @@
 ![version](https://img.shields.io/badge/version-15%2B-D74635)
 ![deprecated](https://img.shields.io/badge/-deprecated-inactive)
 
+[calendar-jp](https://github.com/miyako/calendar-jp)をご使用ください。
+
 # 4d-component-era
 西暦/和暦の変換メソッド
 
