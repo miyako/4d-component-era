@@ -9,8 +9,6 @@
 日付の設定は外部``XML``ファイルで管理しており，カスタマイズすることができます。
 標準XLIFFファイルなので，MEIJI, HEISEIなど，ローカライズもOKです。
 
-**TODO**: スレッドセーフ（``Storage``）
-
 * フォーマット
 
 ``EraList``:``明治;大正;昭和;平成;新元号``
@@ -29,7 +27,7 @@
 
 ``1``年は「元年」と変換されます。
 
-```
+```4d
   //西暦から和暦に変換する
 C_TEXT($wareki)
 C_LONGINT($era;$year;$month;$day)
@@ -42,7 +40,7 @@ $wareki:=ERA_Convert_from_date (!2019-05-01!;->$era;->$year;->$month;->$day)  //
 $wareki:=ERA_Convert_from_date (!2020-01-01!;->$era;->$year;->$month;->$day)  //令和2年1月1日
 ```
 
-```
+```4d
   //和暦から西暦に変換する
 C_DATE($seireki)
 $seireki:=ERA_Convert_to_date (3;64;1;7)  //89/01/07
@@ -54,7 +52,7 @@ $seireki:=ERA_Convert_to_date (2;1;7;30)  //1912/07/30
 
 * ポップアップメニュー・セットアップ用
 
-```
+```4d
   //平成（元号#4）の年リストを取得する（1~31）
 ARRAY TEXT($years;0)
 ERA_GET_YEAR_LIST (->$years;4)
@@ -70,7 +68,7 @@ ERA_GET_DAY_LIST (->$days;1;1;4)
 
 * ポップアップメニュー・項目選択処理用
 
-```
+```4d
   //新元号（元号#5）1年1番目の月
 $month_index:=ERA_Get_month_index (5;1;1)  //4
   //平成（元号#4）1年1月1番目の日
